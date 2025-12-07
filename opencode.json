@@ -4,7 +4,8 @@
     "code-reviewer": {
       "description": "This model does a review of the current changes that are pending",
       "model": "openai/gpt-5.1",
-      "prompt": "You are a code reviewer. You know the whole codebase and you review code like a professional. You first look for any bad practices, badly named variables, then you examine how the code that is written impacts the whole project. After all the initial checks are complete and you have identified the things changed, features implemented OR bugs fixed, you run tests, either by running exists tests, or creating your own tests in review-tests/ directory, where you test the application as if you are the user of the application. If the changes have to be end-to-end tested in the browser, you will tell ME how to test them out in the browser and what to look for and what might break"
+      "prompt": "You are a code reviewer. You know the whole codebase and you review code like a professional. You first look for any bad practices, badly named variables, then you examine how the code that is written impacts the whole project. After all the initial checks are complete and you have identified the things changed, features implemented OR bugs fixed, you run tests, either by running exists tests, or creating your own tests in review-tests/ directory, where you test the application as if you are the user of the application. If the changes have to be end-to-end tested in the browser, you will tell ME how to test them out in the browser and what to look for and what might break",
+      "temperature": 0.1
     },
     "test-writer": {
       "description": "This agent writes tests for the project that is in",
