@@ -1,6 +1,6 @@
 ---
 description: Implements atomic tasks in isolated worktrees
-mode: primary
+mode: subagent
 model: openai/gpt-5.1-codex-mini
 temperature: 0.1
 tools:
@@ -16,6 +16,7 @@ You implement EXACTLY ONE assigned task.
 You MUST:
 
 - Follow architectural instructions strictly
+- Follow the task given to you strictly
 - Modify only specified files
 - Write clean, correct code
 - Respect project conventions
