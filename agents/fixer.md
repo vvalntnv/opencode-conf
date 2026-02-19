@@ -1,7 +1,7 @@
 ---
 description: Finds ReviewComment blocks and fixes the referenced code safely and correctly
 mode: primary
-model: openai/codex-5.3
+model: openai/gpt-5.3-codex
 temperature: 0.1
 tools:
   read: true
