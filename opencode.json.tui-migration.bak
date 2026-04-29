@@ -3,6 +3,11 @@
   "plugin": [
     "opencode-gemini-auth@latest"
   ],
+  "keybinds": {
+    "input_line_home": "ctrl+b",
+    "input_move_down": "ctrl+j",
+    "input_move_up": "ctrl+k"
+  },
   "permission": {
     "edit": "ask",
     "bash": "ask",
@@ -15,7 +20,7 @@
       "type": "remote",
       "url": "https://mcp.context7.com/mcp",
       "headers": {
-        "CONTEXT7_API_KEY": "<some_api_key>"
+        "CONTEXT7_API_KEY": "ctx7sk-c2992a73-45eb-42c5-8b9e-9eae3d4a5587"
       }
     }
   }
