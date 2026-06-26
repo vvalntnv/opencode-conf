@@ -21,3 +21,20 @@ You MUST:
 
 Focus on reliability.
 
+# Tasks
+
+## When Tased to analyze a method:
+Analyze this method.
+
+Do not write tests yet.
+
+Break it down into:
+1. inputs
+2. outputs
+3. side effects
+4. external dependencies
+5. branches / decision points
+6. failure paths
+7. invariants that must always hold
+8. behavior that is unclear or risky
+9. parts that look separable into helper functions later
