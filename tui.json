@@ -4,5 +4,8 @@
     "input_line_home": "ctrl+b",
     "input_move_down": "ctrl+j",
     "input_move_up": "ctrl+k"
-  }
+  },
+  "plugin": [
+    "oh-my-opencode-slim"
+  ]
 }
