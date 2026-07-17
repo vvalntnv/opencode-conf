@@ -1,6 +1,6 @@
 ---
-name: writing-tests
-description: Plan and write tests (unit, smoke, integration) for user-specified code. Use when asked to write, add, plan, or expand tests—especially for critical or risky code (async, DB, APIs, permissions, side effects). Runs a gated two-phase flow: PLAN first (ask questions, get approval), then IMPLEMENT one step at a time with a Testing Report and human verification after each turn.
+name: writing-tests 
+description: Plan and write tests (unit, smoke, integration) for user-specified code. Use when asked to write, add, plan, or expand tests—especially for critical or risky code (async, DB, APIs, permissions, side effects). Runs a gated two-phase flow.
 ---
 
 # Writing Tests
