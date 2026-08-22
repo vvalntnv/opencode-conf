@@ -1,0 +1,163 @@
+{
+  "$schema": "https://unpkg.com/oh-my-opencode-slim@latest/oh-my-opencode-slim.schema.json",
+  "preset": "openai",
+  "presets": {
+    "vertex": {
+      "orchestrator": {
+        "model": "google-vertex-anthropic/claude-opus-4-8@default",
+        "skills": ["*"],
+        "mcps": ["*", "!context7"]
+      },
+      "oracle": {
+        "model": "google-vertex-anthropic/claude-opus-4-8@default",
+        "skills": ["simplify"],
+        "mcps": ["codegraph"]
+      },
+      "council": {
+        "model": "google-vertex-anthropic/claude-opus-4-8@default",
+        "skills": [],
+        "mcps": ["codegraph"]
+      },
+      "librarian": {
+        "model": "google-vertex-anthropic/claude-haiku-4-5@20251001",
+        "skills": [],
+        "mcps": ["websearch", "context7", "gh_grep", "codegraph"]
+      },
+      "explorer": {
+        "model": "google-vertex-anthropic/claude-haiku-4-5@20251001",
+        "skills": [],
+        "mcps": ["codegraph"]
+      },
+      "designer": {
+        "model": "google-vertex/gemini-3.5-flash",
+        "skills": [],
+        "mcps": ["codegraph"]
+      },
+      "fixer": {
+        "model": "google-vertex-anthropic/claude-sonnet-4-6@default",
+        "skills": [],
+        "mcps": ["codegraph"]
+      },
+      "observer": {
+        "model": "google-vertex/gemini-3.5-flash",
+        "skills": [],
+        "mcps": ["codegraph"]
+      }
+    },
+    "openai": {
+      "orchestrator": {
+        "model": "openai/gpt-5.6-sol",
+        "variant": "medium",
+        "skills": ["*"],
+        "mcps": ["*", "!context7"]
+      },
+      "oracle": {
+        "model": "openai/gpt-5.6-sol",
+        "variant": "high",
+        "skills": ["simplify"],
+        "mcps": ["codegraph"]
+      },
+      "council": {
+        "model": "openai/gpt-5.6-sol",
+        "variant": "high",
+        "skills": [],
+        "mcps": ["codegraph"]
+      },
+      "librarian": {
+        "model": "openai/gpt-5.6-luna",
+        "variant": "low",
+        "skills": [],
+        "mcps": ["websearch", "context7", "gh_grep", "codegraph"]
+      },
+      "explorer": {
+        "model": "openai/gpt-5.6-luna",
+        "variant": "low",
+        "skills": [],
+        "mcps": ["codegraph"]
+      },
+      "designer": {
+        "model": "openai/gpt-5.6-terra",
+        "variant": "medium",
+        "skills": [],
+        "mcps": ["codegraph"]
+      },
+      "fixer": {
+        "model": "openai/gpt-5.6-terra",
+        "variant": "low",
+        "skills": [],
+        "mcps": ["codegraph"]
+      },
+      "observer": {
+        "model": "openai/gpt-5.6-luna",
+        "variant": "low",
+        "skills": [],
+        "mcps": ["codegraph"]
+      }
+    },
+    "opencode-go": {
+      "orchestrator": {
+        "model": "opencode-go/glm-5.1",
+        "skills": ["*"],
+        "mcps": ["*", "!context7"]
+      },
+      "oracle": {
+        "model": "opencode-go/deepseek-v4-pro",
+        "variant": "max",
+        "skills": ["simplify"],
+        "mcps": ["codegraph"]
+      },
+      "council": {
+        "model": "opencode-go/deepseek-v4-pro",
+        "variant": "high",
+        "skills": [],
+        "mcps": ["codegraph"]
+      },
+      "librarian": {
+        "model": "opencode-go/minimax-m2.7",
+        "skills": [],
+        "mcps": ["websearch", "context7", "gh_grep", "codegraph"]
+      },
+      "explorer": {
+        "model": "opencode-go/minimax-m2.7",
+        "skills": [],
+        "mcps": ["codegraph"]
+      },
+      "designer": {
+        "model": "opencode-go/kimi-k2.6",
+        "variant": "medium",
+        "skills": [],
+        "mcps": ["codegraph"]
+      },
+      "fixer": {
+        "model": "opencode-go/deepseek-v4-flash",
+        "variant": "high",
+        "skills": [],
+        "mcps": ["codegraph"]
+      },
+      "observer": {
+        "model": "opencode-go/kimi-k2.6",
+        "skills": [],
+        "mcps": ["codegraph"]
+      }
+    }
+  },
+  "council": {
+    "councillor_execution_mode": "serial",
+    "presets": {
+      "default": {
+        "opus": { "model": "google-vertex-anthropic/claude-opus-4-8@default" },
+        "sonnet": { "model": "google-vertex-anthropic/claude-sonnet-4-6@default" },
+        "gemini": { "model": "google-vertex/gemini-3.5-flash" }
+      }
+    }
+  },
+  "companion": {
+    "enabled": false,
+    "position": "bottom-right",
+    "size": "medium",
+    "gifPack": "default",
+    "loopStyle": "classic",
+    "speed": 1,
+    "debug": false
+  }
+}
