@@ -1,0 +1,27 @@
+{
+  "$schema": "https://opencode.ai/v2/cli.json",
+  "theme": {
+    "name": "rosepine"
+  },
+  "keybinds": {
+    "input.move.up": "ctrl+k",
+    "input.move.down": "ctrl+j",
+    "input.line.home": "ctrl+b"
+  },
+  "plugins": [
+    "oh-my-opencode-slim"
+  ],
+  "diffs": {
+    "wrap": "word"
+  },
+  "session": {
+    "sidebar": "auto",
+    "scrollbar": false,
+    "thinking": "show",
+    "permissions": "autoaccept"
+  },
+  "animations": true,
+  "tabs": {
+    "layout": "vertical"
+  }
+}
