@@ -8,10 +8,29 @@
     ],
     "permission": {
         "edit": "ask",
-        "bash": "ask",
+        "bash": {
+            "*": "ask",
+            "git push": "deny",
+            "git push *": "deny",
+            "git reset --hard": "deny",
+            "git reset --hard *": "deny",
+            "git clean *": "deny",
+            "psql": "deny",
+            "psql *": "deny",
+            "mysql": "deny",
+            "mysql *": "deny",
+            "sqlite": "deny",
+            "sqlite *": "deny",
+            "sqlite3": "deny",
+            "sqlite3 *": "deny",
+            "rm *": "deny",
+            "rmdir *": "deny",
+            "sudo *": "deny",
+            "dd *": "deny"
+        },
         "webfetch": "allow",
         "doom_loop": "ask",
-        "external_directory": "ask"
+        "external_directory": "deny"
     },
     "mcp": {
         "context7": {
