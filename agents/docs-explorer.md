@@ -1,6 +1,7 @@
 ---
 description: Retrieves and synthesizes documentation using Context7 MCP.
 mode: subagent
+disable: true
 model: openai/gpt-5.2
 temperature: 0.1
 tools:
