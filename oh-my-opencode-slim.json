@@ -46,49 +46,49 @@
     },
     "openai": {
       "orchestrator": {
-        "model": "openai/gpt-5.6-terra",
+        "model": "openai/gpt-6.1-sol",
         "variant": "medium",
         "skills": ["*"],
         "mcps": ["codegraph", "gh_grep"]
       },
       "oracle": {
-        "model": "openai/gpt-5.6-sol",
+        "model": "openai/gpt-6.1-sol",
         "variant": "high",
         "skills": ["simplify"],
         "mcps": ["codegraph"]
       },
       "council": {
-        "model": "openai/gpt-5.6-sol",
+        "model": "openai/gpt-6.1-sol",
         "variant": "high",
         "skills": [],
         "mcps": ["codegraph"]
       },
       "librarian": {
-        "model": "openai/gpt-5.6-luna",
+        "model": "openai/gpt-6-luna",
         "variant": "low",
         "skills": [],
         "mcps": ["websearch", "context7", "gh_grep", "codegraph"]
       },
       "explorer": {
-        "model": "openai/gpt-5.6-luna",
+        "model": "openai/gpt-6-luna",
         "variant": "low",
         "skills": [],
         "mcps": ["codegraph"]
       },
       "designer": {
-        "model": "openai/gpt-5.6-terra",
+        "model": "openai/gpt-6.1-sol",
         "variant": "medium",
         "skills": [],
         "mcps": ["codegraph"]
       },
       "fixer": {
-        "model": "openai/gpt-5.6-luna",
+        "model": "openai/gpt-6-luna",
         "variant": "low",
         "skills": [],
         "mcps": ["codegraph"]
       },
       "observer": {
-        "model": "openai/gpt-5.6-luna",
+        "model": "openai/gpt-6-luna",
         "variant": "low",
         "skills": [],
         "mcps": ["codegraph"]

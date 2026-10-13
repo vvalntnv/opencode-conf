@@ -15,13 +15,14 @@
     "wrap": "word"
   },
   "session": {
-    "sidebar": "auto",
+    "sidebar": "hide",
     "scrollbar": false,
     "thinking": "show",
     "permissions": "autoaccept"
   },
   "animations": true,
   "tabs": {
-    "layout": "vertical"
+    "layout": "vertical",
+    "indicators": "numbers"
   }
 }
